@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2163.2,1159.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/intelligentocr/classification" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/classification" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p4="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p5="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p6="http://schemas.uipath.com/workflow/activities/documentunderstanding-ml" xmlns:p7="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p8="http://schemas.uipath.com/workflow/activities/intelligentocr/training" xmlns:p9="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiaam="clr-namespace:UiPath.IntelligentOCR.Activities.Actions.Model;assembly=UiPath.IntelligentOCR.Activities" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:upat="clr-namespace:UiPath.Persistence.Activities.Tasks;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1295.2,1104" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/intelligentocr/classification" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/classification" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p4="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p5="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p6="http://schemas.uipath.com/workflow/activities/documentunderstanding-ml" xmlns:p7="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p8="http://schemas.uipath.com/workflow/activities/intelligentocr/training" xmlns:p9="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiaam="clr-namespace:UiPath.IntelligentOCR.Activities.Actions.Model;assembly=UiPath.IntelligentOCR.Activities" xmlns:uoa="clr-namespace:UiPath.OmniPage.Activities;assembly=UiPath.OmniPage.Activities" xmlns:upat="clr-namespace:UiPath.Persistence.Activities.Tasks;assembly=UiPath.Persistence.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="112">
       <x:String>System.Activities</x:String>
@@ -95,7 +95,6 @@
       <AssemblyReference>UiPath.OmniPage.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Persistence.Activities</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
@@ -132,7 +131,7 @@
           <av:PointCollection x:Key="ConnectorLocation">310,236.4 310,266.4</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="Retrieve all assets from the predefined Orchestrator folder." DisplayName="1: Initialize Assets " sap:VirtualizedContainerService.HintSize="200,128.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+      <Sequence sap2010:Annotation.AnnotationText="Retrieve all assets from the predefined 'Shared' folder." DisplayName="1: Initialize Assets " sap:VirtualizedContainerService.HintSize="241.6,985.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -280,7 +279,7 @@
                       <av:Size x:Key="ShapeSize">200,128.8</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap2010:Annotation.AnnotationText="Process each file within the DocumentPaths array one at a time." DisplayName="Process Document - Layer 1" sap:VirtualizedContainerService.HintSize="348,1246.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                  <Sequence sap2010:Annotation.AnnotationText="Process each file within the DocumentPaths array one at a time." DisplayName="Process Document - Layer 1" sap:VirtualizedContainerService.HintSize="200,128.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="s:Exception" sap2010:Annotation.AnnotationText="Used to store the exception recorded by the user after a classification task has been diverted to Action Center." Name="ClassificationException" />
                       <Variable x:TypeArguments="x:Boolean" sap2010:Annotation.AnnotationText="Used to determine whether the document requires manual claasification." Name="RequireManualClassification" />
@@ -532,16 +531,8 @@
                                         <Sequence sap2010:Annotation.AnnotationText="Insufficient confidence level. A classification task will be created in Action Center." DisplayName="6.1: Action Center - Classification" sap:VirtualizedContainerService.HintSize="200,128.8" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="uiaam:DocumentClassificationActionData" sap2010:Annotation.AnnotationText="Output generated by the 'Create Document Classification Action' activity. Used as an input for the 'Wait For Documnet Classification Action and Resume' activity." Name="ClassificationActionObject" />
-                                            <Variable x:TypeArguments="scg:List(upat:TaskUserAssignment)" Name="UserAssignments">
-                                              <Variable.Default>
-                                                <mva:VisualBasicValue x:TypeArguments="scg:List(upat:TaskUserAssignment)" ExpressionText="new list(of TaskUserAssignment)" />
-                                              </Variable.Default>
-                                            </Variable>
-                                            <Variable x:TypeArguments="scg:List(upat:TaskAssignmentResponse)" Name="FailedAssignments">
-                                              <Variable.Default>
-                                                <mva:VisualBasicValue x:TypeArguments="scg:List(upat:TaskAssignmentResponse)" ExpressionText="new list(of TaskAssignmentResponse)" />
-                                              </Variable.Default>
-                                            </Variable>
+                                            <Variable x:TypeArguments="scg:List(upat:TaskUserAssignment)" Default="[new list(of TaskUserAssignment)]" Name="UserAssignments" />
+                                            <Variable x:TypeArguments="scg:List(upat:TaskAssignmentResponse)" Default="[new list(of TaskAssignmentResponse)]" Name="FailedAssignments" />
                                           </Sequence.Variables>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -565,7 +556,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                           </p:CreateDocumentClassificationAction>
-                                          <AddToCollection x:TypeArguments="upat:TaskUserAssignment" sap2010:Annotation.AnnotationText="Type Argument: TaskUserAssignment&#xD;&#xA;&#xD;&#xA;Add task to UserAssignments list." Collection="[UserAssignments]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="514.4,114.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[New TaskUserAssignment(ClassificationActionObject.Id, &quot;sam.robinson@revealgroup.com&quot;)]">
+                                          <AddToCollection x:TypeArguments="upat:TaskUserAssignment" sap2010:Annotation.AnnotationText="Type Argument: TaskUserAssignment&#xA;&#xA;Add task to UserAssignments list." Collection="[UserAssignments]" DisplayName="Add To Collection" sap:VirtualizedContainerService.HintSize="514.4,114.4" sap2010:WorkflowViewState.IdRef="AddToCollection`1_3" Item="[New TaskUserAssignment(ClassificationActionObject.Id, &quot;sam.robinson@revealgroup.com&quot;)]">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
